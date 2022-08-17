@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ggab13.github.io/memory-game/static/css/main.c46ab82c.css",
+    "main.js": "/ggab13.github.io/memory-game/static/js/main.c30bda05.js",
+    "static/js/787.b5957360.chunk.js": "/ggab13.github.io/memory-game/static/js/787.b5957360.chunk.js",
+    "static/media/logo.svg": "/ggab13.github.io/memory-game/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ggab13.github.io/memory-game/index.html",
+    "main.c46ab82c.css.map": "/ggab13.github.io/memory-game/static/css/main.c46ab82c.css.map",
+    "main.c30bda05.js.map": "/ggab13.github.io/memory-game/static/js/main.c30bda05.js.map",
+    "787.b5957360.chunk.js.map": "/ggab13.github.io/memory-game/static/js/787.b5957360.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c46ab82c.css",
+    "static/js/main.c30bda05.js"
+  ]
+}
