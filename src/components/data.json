@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Captain Hero",
+    "src": "../assets/captain.webp",
+    "clicked": false
+  },
+  {
+    "id": "2",
+    "name": "Foxxy Love",
+    "src": "../assets/foxy.webp",
+    "clicked": false
+  },
+  {
+    "id": "3",
+    "name": "Ling Ling",
+    "src": "../assets/ling.jpg",
+    "clicked": false
+  },
+  {
+    "id": "4",
+    "name": "Princess Clara",
+    "src": "../assets/princess.jpg",
+    "clicked": false
+  },
+  {
+    "id": "5",
+    "name": "Spanky Ham",
+    "src": "../assets/spanky.jpg",
+    "clicked": false
+  },
+  {
+    "id": "6",
+    "name": "Xandir P. Wifflebottom",
+    "src": "../assets/xandir.jpg",
+    "clicked": false
+  },
+  {
+    "id": "7",
+    "name": "Toot Braunstein",
+    "src": "../assets/toot.jpg",
+    "clicked": false
+  },
+  {
+    "id": "8",
+    "name": "Wooldoor Sockbat",
+    "src": "../assets/wooldooor.webp",
+    "clicked": false
+  }
+]

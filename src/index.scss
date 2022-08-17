@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  background: radial-gradient(rgba(#7600bf, 0.5) 0%, transparent 50%), linear-gradient(#0b161e 40%, #202076 70%) no-repeat;
+}
+.App {
+  margin: 0 auto;
+  width: 1200px;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.score {
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: white;
+}
+.scoreboard {
+  margin: 2em; 
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 3em;  
+}
+
+
+.card-grid--item {  
+  margin-top: 30px;
+  border-radius: 25px;
+  border: 8px solid rgb(71, 17, 187); 
+  overflow: hidden; 
+  width: 220px;
+  height: auto;  
+  font-style: italic;
+
+  img {
+    width: auto;
+    height: 200px;    
+  }
+
+  .card--name {
+    padding: 0.3em;     
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px #000000;
+    color: white;
+  }
+  .card--clicked {
+    padding: 0.3em;
+    text-align: center;
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+    text-shadow: 3px 3px #000000;
+  }  
+}
+
+.lines {
+  position: fixed;
+  left: 0;
+  transform: translateY(-1em);
+  $color: #135b85; 
+  width: 100vw;
+  height: 3.5em;
+  background: linear-gradient(rgba($color, 0.2) 20%, $color 40%, $color 60%, rgba($color, 0.2) 80%);
+  background-size: 1px 0.5em;
+  box-shadow: 0 0 1em rgba($color, 0.4); 
+  opacity: 0.4;
+}
+.currentscore {
+  position: absolute;    
+  top: 55px;
+  margin-left: 60px;
+  transform: skew(-15deg);
+  font-family: 'Exo';   
+  font-size: 1em;
+  letter-spacing: 0.03em;  
+  
+  span:first-child {
+    display: block;
+    text-shadow: 0 0 0.1em #c4cbebcc, 0 0 0.2em rgb(14, 3, 39),  0 0 5em #9804fa86;
+    -webkit-text-stroke: 0.06em rgba(rgb(21, 13, 13), 0.5);
+  }
+  
+  span:last-child {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#032d50 0%, #000000 0%, rgb(10, 0, 0) 0%, #000000 0%, #fefefe 0%, #000000 100%);
+    -webkit-text-stroke: 0.01em #94a0b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.highscore {
+  position: absolute;
+  width: 300px;
+  margin-left: 30px;
+  top: 10px;
+  transform: skew(-5deg);
+  font-family: 'Exo';     
+  letter-spacing: 0.03em;   
+  
+  span:first-child {
+    display: block;
+    text-shadow: 0 0 0.1em #de08b3, 0 0 0.2em black,  0 0 5em #165ff3;
+    -webkit-text-stroke: 0.06em rgba(black, 0.5);
+  }
+  
+  span:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#e504f996 25%, #01020e 10%, white 50%, #7a0a8e 100%, #8313e7 100%, #ff61af 100%);
+    -webkit-text-stroke: 0.01em #94a0b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.card-grid--item:hover {
+  border: 8px solid rgb(158, 22, 182);
+  animation: zoominoutsinglefeatured 1s 1;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.cardcontainer img {
+  animation: zoominoutsinglefeatured 3s infinite;
+}
