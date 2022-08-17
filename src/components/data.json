@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Captain Hero",
-    "src": "../assets/captain.webp",
+    "src": "..memory-game/public/assets/captain.webp",
     "clicked": false
   },
   {
