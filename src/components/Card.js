@@ -11,9 +11,7 @@ function Card(props) {
 
   React.useEffect(() => {
     const newCard = { ...card, clicked: props.clicked };
-    // Update local value when identity someProp changes (identity).
-    setCard(newCard);
-    // card - ra nézem a callbacket akkor infinit loopba fut, propsra viszont mukodik?
+    setCard(newCard);  
   }, [props]);
   return (
     <div className="card" onClick={() => props.cardClicked(card.id)}>
