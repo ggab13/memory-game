@@ -6,10 +6,7 @@ function Card(props) {
     id: props.id,
     name: props.name,
     src: props.src,
-    clicked: props.clicked,
-    // Boolean csak úgy látszódik ha  + '' és egy üres stringet teszek mögé, anélkül nem írja ki ? Miért?
-    //  Hogy rendereli le mikor updatelem a parenből újra? Console.log-al látom a módosítást DOM-ban nem :()
-    // Ilyenkor amikor a parentben használom ezeket a componenseket, effektív ezek duplikálva vannak van egy ami különállóan él a parnetcomponentben lévőtől? Ezért nem frissíti a domban?
+    clicked: props.clicked,    
   });
 
   React.useEffect(() => {
